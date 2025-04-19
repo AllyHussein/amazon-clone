@@ -1,28 +1,53 @@
-import { NextRequest, NextResponse } from "next/server";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// pages/api/webhook.ts
+import { buffer } from "micro";
 import Stripe from "stripe";
-
-import { sendPurchaseReceipt } from "@/emails";
+import type { NextApiRequest, NextApiResponse } from "next";
 import Order from "@/lib/db/models/order.model";
+import { sendPurchaseReceipt } from "@/emails";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string);
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
 
-export async function POST(req: NextRequest) {
-  const event = await stripe.webhooks.constructEvent(
-    await req.text(),
-    req.headers.get("stripe-signature") as string,
-    process.env.STRIPE_WEBHOOK_SECRET as string
-  );
-  console.log("event", event);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+  // Use this if you're on latest SDK
+  apiVersion: "2025-03-31.basil",
+});
+
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
+  if (req.method !== "POST") {
+    return res.status(405).end("Method Not Allowed");
+  }
+
+  const buf = await buffer(req);
+  const sig = req.headers["stripe-signature"] as string;
+
+  let event: Stripe.Event;
+  try {
+    event = stripe.webhooks.constructEvent(
+      buf,
+      sig,
+      process.env.STRIPE_WEBHOOK_SECRET!
+    );
+  } catch (err: any) {
+    console.error("Webhook signature verification failed.", err.message);
+    return res.status(400).send(`Webhook Error: ${err.message}`);
+  }
 
   if (event.type === "charge.succeeded") {
-    const charge = event.data.object;
+    const charge = event.data.object as Stripe.Charge;
     const orderId = charge.metadata.orderId;
     const email = charge.billing_details.email;
     const pricePaidInCents = charge.amount;
+
     const order = await Order.findById(orderId).populate("user", "email");
-    if (order == null) {
-      return new NextResponse("Bad Request", { status: 400 });
-    }
+    if (!order) return res.status(400).send("Order not found");
 
     order.isPaid = true;
     order.paidAt = new Date();
@@ -32,15 +57,15 @@ export async function POST(req: NextRequest) {
       email_address: email!,
       pricePaid: (pricePaidInCents / 100).toFixed(2),
     };
+
     await order.save();
+
     try {
       await sendPurchaseReceipt({ order });
     } catch (err) {
-      console.log("email error", err);
+      console.error("Email sending failed:", err);
     }
-    return NextResponse.json({
-      message: "updateOrderToPaid was successful",
-    });
   }
-  return new NextResponse();
+
+  res.status(200).send("Webhook received");
 }
