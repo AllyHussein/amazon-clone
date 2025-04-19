@@ -132,13 +132,13 @@ const CheckoutForm = () => {
     });
     if (!res.success) {
       toast({
-        title: "Order Created Successfully",
+        title: "Error Creating Order",
         description: res.message,
         variant: "destructive",
       });
     } else {
       toast({
-        title: "Error Creating Order",
+        title: "Order Created Successfully",
         description: res.message,
         variant: "default",
       });
