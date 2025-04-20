@@ -39,12 +39,14 @@ export default async function SignInPage(props: {
           <div>
             <CredentialsSignInForm />
           </div>
+          <hr className="my-3" />
+          <p className="text-center text-gray-700">Or</p>
           <div className="mt-4">
             <GoogleSignInForm />
           </div>
         </CardContent>
       </Card>
-      <p>New to {site.name}?</p>
+      <p className="text-center my-4 text-gray-700">New to {site.name}?</p>
 
       <Link href={`/sign-up?callbackUrl=${encodeURIComponent(callbackUrl)}`}>
         <Button className="w-full" variant="outline">
