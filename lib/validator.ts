@@ -188,3 +188,6 @@ export const OrderInputSchema = z.object({
 export const UserNameSchema = z.object({
   name: UserName,
 });
+export const ProductUpdateSchema = ProductInputSchema.extend({
+  _id: z.string(),
+});

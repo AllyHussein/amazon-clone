@@ -12,7 +12,9 @@ import {
 } from "@/lib/validator";
 import { z } from "zod";
 
-export type IProductInput = z.infer<typeof ProductInputSchema>;
+export type IProductInput = z.infer<typeof ProductInputSchema> & {
+  _id?: string;
+};
 
 export type IReviewInput = z.infer<typeof ReviewInputSchema>;
 export type IReviewDetails = IReviewInput & {
