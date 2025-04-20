@@ -53,4 +53,12 @@ export type IUserSignIn = z.infer<typeof UserSignInSchema>;
 export type IUserSignUp = z.infer<typeof UserSignUpSchema>;
 export type ShippingAddress = z.infer<typeof ShippingAddressSchema>;
 export type IOrderInput = z.infer<typeof OrderInputSchema>;
+export type IOrderList = IOrderInput & {
+  _id: string;
+  user: {
+    name: string;
+    email: string;
+  };
+  createdAt: Date;
+};
 export type IUserName = z.infer<typeof UserNameSchema>;
