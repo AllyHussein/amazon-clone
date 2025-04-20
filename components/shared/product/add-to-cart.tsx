@@ -6,7 +6,6 @@ import {
   Select,
   SelectContent,
   SelectItem,
-  SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
 import useCartStore from "@/hooks/use-cart-store";
@@ -14,6 +13,7 @@ import { useToast } from "@/hooks/use-toast";
 import { OrderItem } from "@/types";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function AddToCart({
   item,
@@ -28,6 +28,7 @@ export default function AddToCart({
   const { addItem } = useCartStore();
 
   const [quantity, setQuantity] = useState(1);
+  const t = useTranslations();
 
   return minimal ? (
     <Button
@@ -36,15 +37,15 @@ export default function AddToCart({
         try {
           addItem(item, 1);
           toast({
-            title: "Added to Cart",
-            description: "Item added to cart successfully",
+            title: t("Product.Added to Cart"),
+            ddescription: t("Product.Added to Cart"),
             action: (
               <Button
                 onClick={() => {
                   router.push("/cart");
                 }}
               >
-                Go to Cart
+                {t("Product.Go to Cart")}
               </Button>
             ),
           });
@@ -56,7 +57,7 @@ export default function AddToCart({
         }
       }}
     >
-      Add to Cart
+      {t("Product.Add to Cart")}
     </Button>
   ) : (
     <div className="w-full space-y-2">
@@ -64,9 +65,9 @@ export default function AddToCart({
         value={quantity.toString()}
         onValueChange={(i) => setQuantity(Number(i))}
       >
-        <SelectTrigger className="">
-          <SelectValue>Quantity: {quantity}</SelectValue>
-        </SelectTrigger>
+        <SelectValue>
+          {t("Product.Quantity")}: {quantity}
+        </SelectValue>
         <SelectContent position="popper">
           {Array.from({ length: item.countInStock }).map((_, i) => (
             <SelectItem key={i + 1} value={`${i + 1}`}>
@@ -92,7 +93,7 @@ export default function AddToCart({
                     router.push("/cart");
                   }}
                 >
-                  Go to Cart
+                  {t("Product.Go to Cart")}
                 </Button>
               ),
             });
@@ -104,7 +105,7 @@ export default function AddToCart({
           }
         }}
       >
-        Add to Cart
+        {t("Product.Add to Cart")}{" "}
       </Button>
       <Button
         variant="secondary"
@@ -121,7 +122,7 @@ export default function AddToCart({
         }}
         className="w-full rounded-full "
       >
-        Buy Now
+        {t("Product.Buy Now")}
       </Button>
     </div>
   );

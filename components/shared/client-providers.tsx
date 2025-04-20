@@ -3,26 +3,35 @@ import React from "react";
 import useCartSidebar from "@/hooks/use-cart-sidebar";
 import CartSidebar from "./cart-sidebar";
 import { ThemeProvider } from "./theme-provider";
+import AppInitializer from "./app-initializer";
+import { ClientSetting } from "@/types";
 
 export default function ClientProviders({
+  setting,
   children,
 }: {
+  setting: ClientSetting;
   children: React.ReactNode;
 }) {
-  const isCartSidebarOpen = useCartSidebar();
+  const visible = useCartSidebar();
 
   return (
     <>
-      <ThemeProvider attribute="class" defaultTheme="light">
-        {isCartSidebarOpen ? (
-          <div className="flex min-h-screen">
-            <div className="flex-1 overflow-hidden">{children}</div>
-            <CartSidebar />
-          </div>
-        ) : (
-          <div>{children}</div>
-        )}
-      </ThemeProvider>
+      <AppInitializer setting={setting}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme={setting.common.defaultTheme.toLocaleLowerCase()}
+        >
+          {visible ? (
+            <div className="flex min-h-screen">
+              <div className="flex-1 overflow-hidden">{children}</div>
+              <CartSidebar />
+            </div>
+          ) : (
+            <div>{children}</div>
+          )}
+        </ThemeProvider>
+      </AppInitializer>
     </>
   );
 }
