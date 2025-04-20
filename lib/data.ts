@@ -1252,9 +1252,9 @@ const data: Data = {
         pageSize: 9,
       },
       site: {
-        name: "NxtAmzn",
+        name: "NextAmazon",
         description:
-          "NxtAmzn is a sample Ecommerce website built with Next.js, Tailwind CSS, and MongoDB.",
+          "NextAmazon is a sample Ecommerce website built with Next.js, Tailwind CSS, and MongoDB.",
         keywords: "Next Ecommerce, Next.js, Tailwind CSS, MongoDB",
         url: "https://next-mongo-ecommerce-final.vercel.app",
         logo: "/icons/logo.svg",

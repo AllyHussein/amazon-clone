@@ -34,7 +34,11 @@ export default async function UserButton() {
           </div>
         </DropdownMenuTrigger>
         {session ? (
-          <DropdownMenuContent className="w-56" align="end" forceMount>
+          <DropdownMenuContent
+            className="w-56 bg-white dark:bg-gray-800"
+            align="end"
+            forceMount
+          >
             <DropdownMenuLabel className="font-normal">
               <div className="flex flex-col space-y-1">
                 <p className="text-sm font-medium leading-none">

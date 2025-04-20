@@ -13,13 +13,13 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import useColorStore from "@/hooks/use-color-store";
+// import useColorStore from "@/hooks/use-color-store";
 import useIsMounted from "@/hooks/use-is-mounted";
 import { useTranslations } from "next-intl";
 
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
-  const { availableColors, color, setColor } = useColorStore(theme);
+  // const { availableColors, color, setColor } = useColorStore(theme);
   const t = useTranslations("Header");
   const changeTheme = (value: string) => {
     setTheme(value);
@@ -38,7 +38,7 @@ export default function ThemeSwitcher() {
           </div>
         )}
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 bg-white dark:bg-gray-800">
         <DropdownMenuLabel>Theme</DropdownMenuLabel>
 
         <DropdownMenuRadioGroup value={theme} onValueChange={changeTheme}>
@@ -50,7 +50,7 @@ export default function ThemeSwitcher() {
           </DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuLabel>{t("Color")}</DropdownMenuLabel>
+        {/* <DropdownMenuLabel>{t("Color")}</DropdownMenuLabel>
         <DropdownMenuRadioGroup
           value={color.name}
           onValueChange={(value) => setColor(value, true)}
@@ -64,7 +64,7 @@ export default function ThemeSwitcher() {
               {t(c.name)}{" "}
             </DropdownMenuRadioItem>
           ))}
-        </DropdownMenuRadioGroup>
+        </DropdownMenuRadioGroup> */}
       </DropdownMenuContent>
     </DropdownMenu>
   );
