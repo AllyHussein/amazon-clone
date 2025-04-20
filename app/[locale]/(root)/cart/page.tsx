@@ -227,7 +227,7 @@ export default function CartPage() {
                   </div>
                   <Button
                     onClick={() => router.push("/checkout")}
-                    className="rounded-full w-full"
+                    className="rounded-full w-full bg-yellow-500 text-white hover:bg-yellow-600"
                   >
                     {t("Cart.Proceed to Checkout")}
                   </Button>

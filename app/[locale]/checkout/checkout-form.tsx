@@ -163,7 +163,7 @@ const CheckoutForm = () => {
         {!isAddressSelected && (
           <div className="border-b mb-4">
             <Button
-              className="rounded-full w-full"
+              className="rounded-full w-full bg-yellow-500 text-white hover:bg-yellow-600"
               onClick={handleSelectShippingAddress}
             >
               Ship to this address
@@ -177,7 +177,7 @@ const CheckoutForm = () => {
         {isAddressSelected && !isPaymentMethodSelected && (
           <div className=" mb-4">
             <Button
-              className="rounded-full w-full"
+              className="rounded-full w-full bg-yellow-500 text-white hover:bg-yellow-600"
               onClick={handleSelectPaymentMethod}
             >
               Use this payment method
@@ -192,7 +192,10 @@ const CheckoutForm = () => {
         )}
         {isPaymentMethodSelected && isAddressSelected && (
           <div>
-            <Button onClick={handlePlaceOrder} className="rounded-full w-full">
+            <Button
+              onClick={handlePlaceOrder}
+              className="rounded-full w-full bg-yellow-500 text-white hover:bg-yellow-600"
+            >
               Place Your Order
             </Button>
             <p className="text-xs text-center py-2">
@@ -419,7 +422,7 @@ const CheckoutForm = () => {
                       <CardFooter className="  p-4">
                         <Button
                           type="submit"
-                          className="rounded-full font-bold"
+                          className="rounded-full font-bold bg-yellow-500 text-white hover:bg-yellow-600"
                         >
                           Ship to this address
                         </Button>
@@ -484,7 +487,7 @@ const CheckoutForm = () => {
                   <CardFooter className="p-4">
                     <Button
                       onClick={handleSelectPaymentMethod}
-                      className="rounded-full font-bold"
+                      className="rounded-full font-bold bg-yellow-500 text-white hover:bg-yellow-600"
                     >
                       Use this payment method
                     </Button>
@@ -687,7 +690,10 @@ const CheckoutForm = () => {
 
               <Card className="hidden md:block ">
                 <CardContent className="p-4 flex flex-col md:flex-row justify-between items-center gap-3">
-                  <Button onClick={handlePlaceOrder} className="rounded-full">
+                  <Button
+                    onClick={handlePlaceOrder}
+                    className="rounded-full bg-yellow-500 text-white hover:bg-yellow-600"
+                  >
                     Place Your Order
                   </Button>
                   <div className="flex-1">

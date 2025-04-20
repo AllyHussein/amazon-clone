@@ -32,7 +32,7 @@ export default function AddToCart({
 
   return minimal ? (
     <Button
-      className="rounded-full w-auto"
+      className="rounded-full w-auto bg-yellow-500 text-white hover:bg-yellow-600"
       onClick={() => {
         try {
           addItem(item, 1);
@@ -41,6 +41,7 @@ export default function AddToCart({
             ddescription: t("Product.Added to Cart"),
             action: (
               <Button
+                className="bg-yellow-500 text-white hover:bg-yellow-600"
                 onClick={() => {
                   router.push("/cart");
                 }}
@@ -78,7 +79,7 @@ export default function AddToCart({
       </Select>
 
       <Button
-        className="rounded-full w-full"
+        className="rounded-full w-full bg-gray-500 text-white hover:bg-gray-600 mt-3"
         type="button"
         onClick={async () => {
           try {
@@ -89,6 +90,7 @@ export default function AddToCart({
               description: "Item added to cart successfully",
               action: (
                 <Button
+                  className="bg-yellow-500 text-white hover:bg-yellow-600"
                   onClick={() => {
                     router.push("/cart");
                   }}
@@ -108,6 +110,7 @@ export default function AddToCart({
         {t("Product.Add to Cart")}{" "}
       </Button>
       <Button
+        className="w-full rounded-full bg-yellow-500 text-white hover:bg-yellow-600"
         variant="secondary"
         onClick={() => {
           try {
@@ -120,7 +123,6 @@ export default function AddToCart({
             });
           }
         }}
-        className="w-full rounded-full "
       >
         {t("Product.Buy Now")}
       </Button>

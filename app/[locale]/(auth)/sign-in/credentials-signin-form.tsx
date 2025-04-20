@@ -104,7 +104,12 @@ export default function CredentialsSignInForm() {
           />
 
           <div>
-            <Button type="submit">Sign In</Button>
+            <Button
+              type="submit"
+              className="bg-yellow-500 text-white hover:bg-yellow-600"
+            >
+              Sign In
+            </Button>
           </div>
           <div className="text-sm">
             By signing in, you agree to {site.name}&apos;s{" "}
