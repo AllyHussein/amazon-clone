@@ -1,6 +1,5 @@
 "use client";
 
-import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
@@ -21,7 +20,6 @@ import { useToast } from "@/hooks/use-toast";
 import { createProduct, updateProduct } from "@/lib/actions/product.actions";
 import { IProduct } from "@/lib/db/models/product.model";
 import { UploadButton } from "@/lib/uploadthing";
-import { ProductInputSchema, ProductUpdateSchema } from "@/lib/validator";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toSlug } from "@/lib/utils";
 import { IProductInput } from "@/types";
@@ -82,10 +80,6 @@ const ProductForm = ({
   const router = useRouter();
 
   const form = useForm<IProductInput>({
-    resolver:
-      type === "Update"
-        ? zodResolver(ProductUpdateSchema)
-        : zodResolver(ProductInputSchema),
     defaultValues:
       product && type === "Update" ? product : productDefaultValues,
   });
@@ -301,6 +295,7 @@ const ProductForm = ({
                           }}
                           onUploadError={(error: Error) => {
                             toast({
+                              title: "Error",
                               variant: "destructive",
                               description: `ERROR! ${error.message}`,
                             });
