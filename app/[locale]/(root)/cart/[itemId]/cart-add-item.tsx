@@ -8,7 +8,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import useCartStore from "@/hooks/use-cart-store";
-import { FREE_SHIPPING_MIN_PRICE } from "@/lib/constants";
 import BrowsingHistoryList from "@/components/shared/browsing-history-list";
 import useSettingStore from "@/hooks/use-setting-store";
 import { useTranslations } from "next-intl";
