@@ -1,6 +1,6 @@
 import { auth } from "@/auth";
 
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -10,7 +10,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { SignOut } from "@/lib/actions/user.actions";
-import { cn } from "@/lib/utils";
 import { ChevronDownIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
@@ -75,15 +74,14 @@ export default async function UserButton() {
             </DropdownMenuItem>
           </DropdownMenuContent>
         ) : (
-          <DropdownMenuContent className="w-56" align="end" forceMount>
+          <DropdownMenuContent
+            className="w-56 bg-white dark:bg-gray-800"
+            align="end"
+            forceMount
+          >
             <DropdownMenuGroup>
               <DropdownMenuItem>
-                <Link
-                  className={cn(buttonVariants(), "w-full")}
-                  href="/sign-in"
-                >
-                  {t("Header.Sign in")}
-                </Link>
+                <Link href="/sign-in">{t("Header.Sign in")}</Link>
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuLabel>
