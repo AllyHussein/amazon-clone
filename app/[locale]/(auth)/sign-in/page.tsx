@@ -3,7 +3,6 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { auth } from "@/auth";
-import SeparatorWithOr from "@/components/shared/separator-or";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import CredentialsSignInForm from "./credentials-signin-form";
@@ -40,13 +39,12 @@ export default async function SignInPage(props: {
           <div>
             <CredentialsSignInForm />
           </div>
-          <SeparatorWithOr />
           <div className="mt-4">
             <GoogleSignInForm />
           </div>
         </CardContent>
       </Card>
-      <SeparatorWithOr>New to {site.name}?</SeparatorWithOr>
+      <p>New to {site.name}?</p>
 
       <Link href={`/sign-up?callbackUrl=${encodeURIComponent(callbackUrl)}`}>
         <Button className="w-full" variant="outline">
