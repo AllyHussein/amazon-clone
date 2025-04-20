@@ -184,3 +184,7 @@ export const OrderInputSchema = z.object({
   isPaid: z.boolean().default(false),
   paidAt: z.date().optional(),
 });
+
+export const UserNameSchema = z.object({
+  name: UserName,
+});
