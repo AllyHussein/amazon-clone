@@ -356,7 +356,7 @@ const products: IProductInput[] = [
   {
     name: "Decrum Mens Plain Long Sleeve T-Shirt - Comfortable Soft Fashion V Neck Full Sleeves Jersey Shirts",
     slug: toSlug(
-      "Decrum Mens Plain Long Sleeve T-Shirt - Comfortable Soft Fashion V Neck Full Sleeves Jersey Shirts"
+      "Decrum Mens Plain Long Sleeve T-Shirt - Comfortable Soft Fashion V Neck Full Sleeves Jersey Shirts",
     ),
     category: "T-Shirts",
     brand: "Jerzees",
@@ -386,7 +386,7 @@ const products: IProductInput[] = [
   {
     name: "Muscle Cmdr Men's Slim Fit Henley Shirt Long&Short Business Sleeve Casual 3 Metal Buton Placket Casual Stylish T-Shirt",
     slug: toSlug(
-      "Muscle Cmdr Men's Slim Fit Henley Shirt Long&Short Business Sleeve Casual 3 Metal Buton Placket Casual Stylish T-Shirt"
+      "Muscle Cmdr Men's Slim Fit Henley Shirt Long&Short Business Sleeve Casual 3 Metal Buton Placket Casual Stylish T-Shirt",
     ),
     category: "T-Shirts",
     brand: " Muscle Cmdr",
@@ -473,7 +473,7 @@ const products: IProductInput[] = [
   {
     name: "Levi's mens 505 Regular Fit Jeans (Also Available in Big & Tall)",
     slug: toSlug(
-      "Levi's mens 505 Regular Fit Jeans (Also Available in Big & Tall)"
+      "Levi's mens 505 Regular Fit Jeans (Also Available in Big & Tall)",
     ),
     category: "Jeans",
     brand: "Levi's",
@@ -531,7 +531,7 @@ const products: IProductInput[] = [
   {
     name: "Buffalo David Bitton Mens Men's Driven Relaxed Denim JeansJeans",
     slug: toSlug(
-      "Buffalo David Bitton Mens Men's Driven Relaxed Denim JeansJeans"
+      "Buffalo David Bitton Mens Men's Driven Relaxed Denim JeansJeans",
     ),
     category: "Jeans",
     brand: "Buffalo David Bitton",
@@ -646,7 +646,7 @@ const products: IProductInput[] = [
   {
     name: "SEIKO 5 Sport SRPJ83 Beige Dial Nylon Automatic Watch, Beige, Automatic Watch",
     slug: toSlug(
-      "SEIKO 5 Sport SRPJ83 Beige Dial Nylon Automatic Watch, Beige, Automatic Watch"
+      "SEIKO 5 Sport SRPJ83 Beige Dial Nylon Automatic Watch, Beige, Automatic Watch",
     ),
     category: "Wrist Watches",
     brand: "Seiko",
@@ -676,7 +676,7 @@ const products: IProductInput[] = [
   {
     name: "Casio Men's Heavy Duty Analog Quartz Stainless Steel Strap, Silver, 42 Casual Watch ",
     slug: toSlug(
-      "Casio Men's Heavy Duty Analog Quartz Stainless Steel Strap, Silver, 42 Casual Watch"
+      "Casio Men's Heavy Duty Analog Quartz Stainless Steel Strap, Silver, 42 Casual Watch",
     ),
     category: "Wrist Watches",
     brand: "Casio",
@@ -706,7 +706,7 @@ const products: IProductInput[] = [
   {
     name: "Casio Classic Silver-Tone Stainless Steel Band Date Indicator Watch",
     slug: toSlug(
-      "Casio Classic Silver-Tone Stainless Steel Band Date Indicator Watch"
+      "Casio Classic Silver-Tone Stainless Steel Band Date Indicator Watch",
     ),
     category: "Wrist Watches",
     brand: "Casio",
@@ -821,7 +821,7 @@ const products: IProductInput[] = [
   {
     name: "ziitop Men's Running Walking Shoes Fashion Sneakers Mesh Dress Shoes Business Oxfords Shoes Lightweight Casual Breathable Work Formal Shoes",
     slug: toSlug(
-      "ziitop Men's Running Walking Shoes Fashion Sneakers Mesh Dress Shoes Business Oxfords Shoes Lightweight Casual Breathable Work Formal Shoes"
+      "ziitop Men's Running Walking Shoes Fashion Sneakers Mesh Dress Shoes Business Oxfords Shoes Lightweight Casual Breathable Work Formal Shoes",
     ),
     category: "Shoes",
     brand: "ziitop",
@@ -851,7 +851,7 @@ const products: IProductInput[] = [
   {
     name: "Skechers mens Summits High Range Hands Free Slip-in Shoes Work shoe",
     slug: toSlug(
-      "Skechers mens Summits High Range Hands Free Slip-in Shoes Work shoe"
+      "Skechers mens Summits High Range Hands Free Slip-in Shoes Work shoe",
     ),
     category: "Shoes",
     brand: "Skechers",
@@ -881,7 +881,7 @@ const products: IProductInput[] = [
   {
     name: "DLWKIPV Mens Running Shoes Tennis Cross Training Sneakers Fashion Non Slip Outdoor Walking Jogging Shoes Mesh Light Flexible Comfortable Breathable Shoes",
     slug: toSlug(
-      "DLWKIPV Mens Running Shoes Tennis Cross Training Sneakers Fashion Non Slip Outdoor Walking Jogging Shoes Mesh Light Flexible Comfortable Breathable Shoes"
+      "DLWKIPV Mens Running Shoes Tennis Cross Training Sneakers Fashion Non Slip Outdoor Walking Jogging Shoes Mesh Light Flexible Comfortable Breathable Shoes",
     ),
     category: "Shoes",
     brand: "DLWKIPV",
@@ -939,7 +939,7 @@ const products: IProductInput[] = [
   {
     name: "Mens Wearbreeze Shoes, Urban - Ultra Comfortable Shoes, Breeze Shoes for Men, Men's Mesh Dress Sneakers Business Shoes",
     slug: toSlug(
-      "Mens Wearbreeze Shoes, Urban - Ultra Comfortable Shoes, Breeze Shoes for Men, Men's Mesh Dress Sneakers Business Shoes"
+      "Mens Wearbreeze Shoes, Urban - Ultra Comfortable Shoes, Breeze Shoes for Men, Men's Mesh Dress Sneakers Business Shoes",
     ),
     category: "Shoes",
     brand: "Generic",
@@ -1068,11 +1068,11 @@ const data: Data = {
     {
       title: "About Us",
       slug: "about-us",
-      content: `Welcome to [Your Store Name], your trusted destination for quality products and exceptional service. Our journey began with a mission to bring you the best shopping experience by offering a wide range of products at competitive prices, all in one convenient platform.
+      content: `Welcome to NextAmazon, your trusted destination for quality products and exceptional service. Our journey began with a mission to bring you the best shopping experience by offering a wide range of products at competitive prices, all in one convenient platform.
  
- At [Your Store Name], we prioritize customer satisfaction and innovation. Our team works tirelessly to curate a diverse selection of items, from everyday essentials to exclusive deals, ensuring there's something for everyone. We also strive to make your shopping experience seamless with fast shipping, secure payments, and excellent customer support.
+ At NextAmazon, we prioritize customer satisfaction and innovation. Our team works tirelessly to curate a diverse selection of items, from everyday essentials to exclusive deals, ensuring there's something for everyone. We also strive to make your shopping experience seamless with fast shipping, secure payments, and excellent customer support.
  
- As we continue to grow, our commitment to quality and service remains unwavering. Thank you for choosing [Your Store Name]—we look forward to being a part of your journey and delivering value every step of the way.`,
+ As we continue to grow, our commitment to quality and service remains unwavering. Thank you for choosing NextAmazon—we look forward to being a part of your journey and delivering value every step of the way.`,
       isPublished: true,
     },
     {
@@ -1123,16 +1123,39 @@ const data: Data = {
     {
       title: "Conditions of Use",
       slug: "conditions-of-use",
-      content: `Welcome to [Ecommerce Website Name]. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions. These terms govern your use of our platform, including browsing, purchasing products, and interacting with any content or services provided. You must be at least 18 years old or have the consent of a parent or guardian to use this website. Any breach of these terms may result in the termination of your access to our platform.
- 
- We strive to ensure all product descriptions, pricing, and availability information on our website are accurate. However, errors may occur, and we reserve the right to correct them without prior notice. All purchases are subject to our return and refund policy. By using our site, you acknowledge that your personal information will be processed according to our privacy policy, ensuring your data is handled securely and responsibly. Please review these terms carefully before proceeding with any transactions.
- `,
+      content: `Welcome to NextAmazon. These Conditions of Use govern your access to and use of the NextAmazon website, services, and features. By browsing the website, creating an account, or placing an order, you agree to these conditions and our applicable policies, including our Privacy Policy, Shipping Policy, and Returns Policy.
+
+ **1. Eligibility and Accounts**
+ You must be legally able to enter into a binding agreement to make purchases on this website. If you are under the age of majority where you live, you may use the website only with the involvement and permission of a parent or legal guardian. You are responsible for keeping your account credentials confidential and for activity carried out through your account. Please keep your account information accurate and notify us if you suspect unauthorized access.
+
+ **2. Products, Pricing, and Availability**
+ We make reasonable efforts to display product descriptions, images, prices, and availability accurately. Product colors and appearance may vary depending on your device and screen settings. Products are subject to availability, and we may correct listing errors or update product information when necessary. If an error affects an order you have placed, we will contact you with the available options before proceeding where appropriate.
+
+ **3. Orders and Payment**
+ Placing an order is an offer to purchase the selected products. An order confirmation acknowledges receipt of your order and does not necessarily mean that the order has been accepted or dispatched. We reserve the right to decline or cancel an order where necessary, including in cases of suspected fraud, pricing or listing errors, or product unavailability. Available payment methods and any applicable charges are shown during checkout. You authorize the selected payment provider to process the payment for your order.
+
+ **4. Shipping, Returns, and Refunds**
+ Delivery estimates, shipping charges, and available delivery options are displayed during checkout or in our Shipping Policy. Delivery dates are estimates and may be affected by circumstances outside our control. Returns and refunds are handled according to our Returns Policy and any applicable consumer protection laws.
+
+ **5. Acceptable Use**
+ You agree not to misuse the website, interfere with its operation, attempt unauthorized access, submit fraudulent information, distribute malicious code, or use the service in a way that violates applicable laws or the rights of others.
+
+ **6. Intellectual Property and User Content**
+ Website content, including text, graphics, logos, and design elements, is owned by or licensed to NextAmazon and may not be copied, distributed, or used commercially without prior permission, except where permitted by law. You are responsible for content you submit and must have the rights necessary to share it with us.
+
+ **7. Limitation of Liability**
+ To the extent permitted by applicable law, NextAmazon is not responsible for indirect or consequential losses arising from your use of the website. Nothing in these conditions limits rights or liabilities that cannot legally be excluded. The website and its services may occasionally be unavailable for maintenance, updates, or reasons beyond our control.
+
+ **8. Changes and Contact**
+ We may update these conditions from time to time. The latest version will be published on this page, with the updated version applying from its publication date unless stated otherwise. If you have questions, please contact our customer support team through the Contact Us page.
+
+ Please review these conditions before using the website or placing an order.`,
       isPublished: true,
     },
     {
       title: "Customer Service",
       slug: "customer-service",
-      content: `At [Your Store Name], our customer service team is here to ensure you have the best shopping experience. Whether you need assistance with orders, product details, or returns, we are committed to providing prompt and helpful support.
+      content: `At NextAmazon, our customer service team is here to ensure you have the best shopping experience. Whether you need assistance with orders, product details, or returns, we are committed to providing prompt and helpful support.
  
  If you have questions or concerns, please reach out to us through our multiple contact options:
  - **Email:** support@example.com
@@ -1145,43 +1168,170 @@ const data: Data = {
     {
       title: "Returns Policy",
       slug: "returns-policy",
-      content: "Returns Policy Content",
+      content: `At NextAmazon, we want you to feel confident when shopping with us. If an item does not meet your expectations, you can request a return in accordance with the conditions below and any consumer rights that apply in your location.
+
+ **1. Return Eligibility**
+ Items may be eligible for return when they are unused, in their original condition, and include their original packaging, tags, and accessories where applicable. Some products may be non-returnable for hygiene, safety, personalization, digital-delivery, or other legal reasons. Any product-specific return restrictions will be communicated on the product page or during the purchase process.
+
+ **2. How to Request a Return**
+ 1. Sign in to your NextAmazon account.
+ 2. Open **My Orders** and select the order containing the item.
+ 3. Choose the item you want to return and follow the return instructions, or contact Customer Support if the return option is unavailable.
+ 4. Wait for return instructions before sending the item back.
+
+ **3. Damaged, Defective, or Incorrect Items**
+ If your order arrives damaged, defective, or different from what you ordered, contact Customer Support as soon as possible. Include your order number and a description of the issue. Photos may help us assess the request and arrange an appropriate solution.
+
+ **4. Refunds**
+ Once an approved return has been received and inspected, we will notify you of the outcome. Approved refunds are generally issued to the original payment method. The time it takes for the refund to appear depends on your payment provider or bank. Any delivery charges or return costs will be handled according to the terms shown at checkout, this policy, and applicable law.
+
+ **5. Exchanges**
+ If you need a different size, color, or replacement item, contact Customer Support. Exchanges depend on product availability and may require you to return the original item and place a new order.
+
+ **6. Important Information**
+ Return eligibility, deadlines, and costs can vary by product and destination. Check the product listing and your order details for the applicable conditions. Nothing in this policy limits any mandatory rights you may have under local consumer protection laws.
+
+ For help with a return, visit our Contact Us page and provide your order number.`,
       isPublished: true,
     },
     {
       title: "Careers",
       slug: "careers",
-      content: "careers Content",
+      content: `Build your career with NextAmazon. We are interested in people who enjoy solving problems, improving the customer experience, and helping an e-commerce business grow.
+
+ **A collaborative place to grow**
+ E-commerce brings together technology, operations, customer experience, marketing, merchandising, and logistics. Our work depends on people who are curious, dependable, open to learning, and committed to doing thoughtful work.
+
+ **Areas of opportunity**
+ Depending on our current business needs, opportunities may arise in:
+ - Software engineering and technology
+ - Customer support and customer experience
+ - Marketing, content, and social media
+ - Product merchandising and catalog management
+ - Operations, fulfillment, and logistics
+ - Business development and partnerships
+
+ **How to express your interest**
+ If you would like to be considered for future opportunities, contact us through the Contact Us page with the subject line **Careers at NextAmazon**. Include your resume or portfolio, the type of role you are interested in, and a short introduction. Please do not include sensitive personal information in your initial message.
+
+ We appreciate your interest. Any application will be reviewed according to our hiring needs, and contacting us does not guarantee an interview or offer.`,
       isPublished: true,
     },
     {
       title: "Blog",
       slug: "blog",
-      content: "Blog Content",
+      content: `Welcome to the NextAmazon Blog, a place for useful ideas and updates to help you make informed shopping decisions.
+
+ Explore articles covering product guides, buying advice, practical tips, new arrivals, seasonal inspiration, and updates from the world of online shopping. Our goal is to make it easier to compare options, understand product features, and get more value from the things you buy.
+
+ **What you can expect**
+ - **Buying guides:** Helpful points to consider before choosing a product.
+ - **Product tips:** Ideas for using, caring for, and getting the most from your purchases.
+ - **Shopping inspiration:** Suggestions for gifts, everyday essentials, and seasonal needs.
+ - **Store updates:** News about NextAmazon services, featured collections, and promotions.
+
+ Articles are provided for general information. Product availability, specifications, and prices can change, so always check the current product page before making a purchase.
+
+ Check back for new articles and shopping inspiration from NextAmazon.`,
       isPublished: true,
     },
     {
       title: "Sell Products",
       slug: "sell",
-      content: `Sell Products Content`,
+      content: `Reach customers and grow your business by selling through NextAmazon. We welcome businesses and sellers who can offer genuine products, reliable service, and accurate product information.
+
+ **Why sell on NextAmazon?**
+ - Present your products to customers browsing our online store.
+ - Manage product information and keep listings up to date.
+ - Receive order information through the seller tools made available to approved sellers.
+ - Build customer trust through accurate descriptions and dependable fulfillment.
+
+ **Getting started**
+ 1. Contact our team through the Contact Us page and tell us about your business and product range.
+ 2. Provide your business details and any information needed to review your products.
+ 3. Our team will explain the onboarding process, seller requirements, applicable fees, and available tools.
+ 4. Once approved, follow the instructions provided to create and manage your product listings.
+
+ **Seller responsibilities**
+ Sellers are responsible for ensuring that their products are authentic, lawful to sell, accurately described, appropriately priced, and compliant with applicable safety and labeling requirements. Sellers must keep stock information current, fulfill orders within the agreed handling times, respond to customer issues, and follow NextAmazon's marketplace policies.
+
+ Seller eligibility, fees, payment arrangements, shipping responsibilities, and onboarding requirements will be confirmed directly with our team. Submitting an inquiry does not guarantee acceptance as a seller.
+
+ Interested in selling with us? Contact NextAmazon and include **Sell on NextAmazon** in your message.`,
       isPublished: true,
     },
     {
       title: "Become Affiliate",
       slug: "become-affiliate",
-      content: "Become Affiliate Content",
+      content: `Join the NextAmazon Affiliate Program and earn commission by referring customers to eligible products through your website, blog, social channels, or other approved platforms.
+
+ **How it works**
+ 1. Send us information about your platform and audience through the Contact Us page.
+ 2. Our team will review your application and confirm whether your platform is suitable.
+ 3. If approved, you will receive details about the affiliate terms and how to create and use tracking links.
+ 4. Share approved links with your audience and earn commissions on qualifying purchases according to the program terms.
+
+ **Who can apply?**
+ We welcome relevant websites, content creators, bloggers, and publishers with an audience interested in products available on NextAmazon. Applicants must be able to publish original, lawful content and follow applicable advertising and disclosure rules.
+
+ **Affiliate guidelines**
+ Affiliates must clearly disclose their relationship with NextAmazon, use links and promotional materials as instructed, and avoid misleading claims, spam, unauthorized brand use, or deceptive advertising. Commission rates, qualifying purchases, attribution periods, payment thresholds, and payment schedules will be provided in the applicable affiliate agreement and may be updated in accordance with its terms.
+
+ Applying does not guarantee acceptance. To express your interest, contact us with the subject **Affiliate Program** and include your website or social profile links and a brief description of your audience.`,
       isPublished: true,
     },
     {
       title: "Advertise Your Products",
       slug: "advertise",
-      content: "Advertise Your Products",
+      content: `Promote your brand and products to customers shopping on NextAmazon. We are open to discussing advertising and promotional opportunities with brands, manufacturers, distributors, and eligible sellers whose products are relevant to our customers.
+
+ **Potential advertising opportunities**
+ Depending on availability and campaign objectives, promotional opportunities may include featured product placements, sponsored listings, homepage or category promotions, seasonal campaigns, and other agreed marketing placements.
+
+ **What to include in your inquiry**
+ To help us understand your campaign, please share:
+ - Your company and brand name.
+ - The products or categories you want to promote.
+ - Your target audience and campaign objectives.
+ - Your preferred campaign dates and approximate budget.
+ - Product images, website links, and other relevant marketing materials.
+
+ **Review and approval**
+ All advertising proposals are subject to review, available inventory, and agreement on campaign terms. Advertisers must provide accurate claims and have the rights to all submitted materials. Advertising placement does not guarantee sales or a particular campaign result.
+
+ Pricing, placement availability, creative specifications, reporting, and campaign terms will be discussed with our team before any campaign is confirmed.
+
+ Interested in advertising? Contact us with the subject **Advertise on NextAmazon** and our team will guide you through the next steps.`,
       isPublished: true,
     },
     {
       title: "Shipping Rates & Policies",
       slug: "shipping",
-      content: "Shipping Rates & Policies",
+      content: `NextAmazon offers delivery options designed to make receiving your order straightforward. Available services, delivery estimates, and shipping charges depend on the products in your order and the delivery destination.
+
+ **1. Shipping Options and Rates**
+ Available delivery methods and their costs are displayed during checkout after you enter your delivery address. Where offered, options may include standard and express delivery. Any free-shipping eligibility or minimum order value will be shown on the website or during checkout.
+
+ **2. Delivery Estimates**
+ Estimated delivery dates are provided during checkout or in your order details. Estimates are not guarantees and may be affected by product availability, payment verification, carrier capacity, weather, customs processing, or other circumstances outside our control.
+
+ **3. Order Processing**
+ Orders are prepared for dispatch after the required order and payment checks are completed. Processing times may vary by product and seller. If an item has a different handling or dispatch estimate, check its product page or order details.
+
+ **4. Tracking Your Order**
+ When tracking is available, you can find shipment updates in the **My Orders** section of your account. Tracking information may take some time to appear after an order has been dispatched.
+
+ **5. Delivery Address and Receipt**
+ Please check that your delivery address and contact details are correct before placing your order. If you need to change an address after ordering, contact Customer Support as soon as possible. Changes cannot be guaranteed once an order has entered the dispatch process. Someone may need to be available to receive the package depending on the carrier and delivery service.
+
+ **6. Delayed, Missing, or Damaged Shipments**
+ If tracking has not updated, your order has not arrived within the estimated timeframe, or your package arrives damaged, contact Customer Support with your order number. We will help you review the available information and next steps.
+
+ **7. International Deliveries**
+ For destinations where international delivery is available, customs duties, import taxes, and local fees may apply. The party responsible for these charges will be determined by the checkout information and applicable delivery terms. Customs processing may also affect delivery times.
+
+ **8. Questions**
+ For shipping assistance, visit our Contact Us page and include your order number. The shipping options and final charges shown at checkout for your order take precedence over general estimates on this page.`,
       isPublished: true,
     },
   ],

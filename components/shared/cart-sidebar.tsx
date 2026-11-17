@@ -6,13 +6,7 @@ import { Button, buttonVariants } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { ScrollArea } from "../ui/scroll-area";
 import Image from "next/image";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "../ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger } from "../ui/select";
 import { TrashIcon } from "lucide-react";
 import ProductPrice from "./product/product-price";
 import useSettingStore from "@/hooks/use-setting-store";
@@ -37,9 +31,9 @@ export default function CartSidebar() {
   const locale = useLocale();
 
   return (
-    <div className="w-32 overflow-y-auto">
+    <div className="w-50 overflow-y-auto">
       <div
-        className={`w-32 fixed  h-full ${
+        className={`w-50 fixed  h-full ${
           getDirection(locale) === "rtl" ? "border-r" : "border-l"
         }`}
       >
@@ -58,7 +52,7 @@ export default function CartSidebar() {
             <Link
               className={cn(
                 buttonVariants({ variant: "outline" }),
-                "rounded-full hover:no-underline w-full"
+                "rounded-full hover:no-underline w-full",
               )}
               href="/cart"
             >
@@ -88,7 +82,7 @@ export default function CartSidebar() {
                   <div className="text-sm text-center font-bold">
                     <ProductPrice price={item.price} plain />
                   </div>
-                  <div className="flex gap-2 mt-2">
+                  <div className="flex items-center justify-center gap-2 mt-4">
                     <Select
                       value={item.quantity.toString()}
                       onValueChange={(value) => {
@@ -96,7 +90,7 @@ export default function CartSidebar() {
                       }}
                     >
                       <SelectTrigger className="text-xs w-12 ml-1 h-auto py-0">
-                        <SelectValue />
+                        {item.quantity}
                       </SelectTrigger>
                       <SelectContent>
                         {Array.from({ length: item.countInStock }).map(
@@ -104,7 +98,7 @@ export default function CartSidebar() {
                             <SelectItem value={(i + 1).toString()} key={i + 1}>
                               {i + 1}
                             </SelectItem>
-                          )
+                          ),
                         )}
                       </SelectContent>
                     </Select>

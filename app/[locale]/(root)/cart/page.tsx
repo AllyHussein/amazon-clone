@@ -72,7 +72,7 @@ export default function CartPage() {
                         | undefined
                       >
                     | null
-                    | undefined
+                    | undefined,
                 ) => <Link href="/">{chunks}</Link>,
               })}
             </CardContent>
@@ -143,7 +143,10 @@ export default function CartPage() {
                                 {t("Cart.Quantity")}: {item.quantity}
                               </SelectValue>
                             </SelectTrigger>
-                            <SelectContent position="popper">
+                            <SelectContent
+                              className="bg-white text-black"
+                              position="popper"
+                            >
                               {Array.from({
                                 length: item.countInStock,
                               }).map((_, i) => (
@@ -206,7 +209,7 @@ export default function CartPage() {
                         />
                       </span>{" "}
                       {t(
-                        "Cart.of eligible items to your order to qualify for FREE Shipping"
+                        "Cart.of eligible items to your order to qualify for FREE Shipping",
                       )}
                     </div>
                   ) : (

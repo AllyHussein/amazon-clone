@@ -24,7 +24,9 @@ export default function SelectVariant({
               asChild
               variant="outline"
               className={
-                selectedColor === x ? "border-2 border-primary" : "border-2"
+                selectedColor === x
+                  ? "border-2 border-primary"
+                  : "border-2 border-gray-200"
               }
               key={x}
             >
@@ -55,7 +57,9 @@ export default function SelectVariant({
               asChild
               variant="outline"
               className={
-                selectedSize === x ? "border-2  border-primary" : "border-2  "
+                selectedSize === x
+                  ? "border-2  border-primary"
+                  : "border-2 border-gray-200  "
               }
               key={x}
             >

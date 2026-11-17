@@ -5,9 +5,9 @@ import { useForm } from "react-hook-form";
 
 import { z } from "zod";
 
-import MdEditor from "react-markdown-editor-lite";
-import ReactMarkdown from "react-markdown";
-import "react-markdown-editor-lite/lib/index.css";
+// import MdEditor from "react-markdown-editor-lite";
+// import ReactMarkdown from "react-markdown";
+// import "react-markdown-editor-lite/lib/index.css";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -144,7 +144,7 @@ const WebPageForm = ({
             )}
           />
         </div>
-        <div className="flex flex-col gap-5 md:flex-row">
+        {/* <div className="flex flex-col gap-5 md:flex-row">
           <FormField
             control={form.control}
             name="content"
@@ -163,7 +163,7 @@ const WebPageForm = ({
               </FormItem>
             )}
           />
-        </div>
+        </div> */}
         <div>
           <FormField
             control={form.control}
